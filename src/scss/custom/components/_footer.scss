@@ -1,0 +1,12 @@
+#footer {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  #menu-footer {
+    margin-top: 70px;
+    li {
+      &:not(:last-child){
+        margin-right: 45px;
+      }
+    }
+  }
+}

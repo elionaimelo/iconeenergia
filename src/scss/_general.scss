@@ -1,0 +1,44 @@
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+  
+body {
+  font-family: $font1;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 500;
+}
+
+a {
+  color: #f35b3f;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover,
+a:focus {
+  color: #f35b3f;
+  border: 0;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 28px;
+}

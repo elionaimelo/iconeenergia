@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+  .bg-black {
+    background-color: black;
+    height: 75px;
+  }
+  
+  #section1 {
+    padding-top: 28px;
+    height: 568px;
+    background: url(../images/mobile-home-bgSection1.png) no-repeat;
+    background-size: cover;
+  
+    h1 {
+      font-weight: bold;
+      color: white;
+      margin-top: 206px;
+    }
+  
+    p {
+      color:white;
+    }
+  }
+}

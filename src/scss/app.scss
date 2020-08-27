@@ -1,0 +1,19 @@
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+@import "bootstrap";
+@import "variables";
+@import "general";
+
+//Components
+@import "custom/components/menu-mobile";
+@import "custom/components/buttons";
+@import "custom/components/header";
+@import "custom/components/footer";
+
+
+// Pages
+@import "custom/pages/index";
+@import "media_queries";
+
