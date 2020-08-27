@@ -61,6 +61,89 @@
     background: url(../images/bgSection3.jpg) center no-repeat;
     background-size: cover;
     height: 540px;
+    h1 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    #carousel1 {
+      .carousel-indicators {
+        justify-content: flex-start;
+        margin-left: 0;
+
+        li {
+          height: 8px;
+          margin-right: 14px;
+        }
+
+        .active {
+          background-color: $amarelo;
+        }
+      }
+      .carousel-item {
+        color:white;
+        height: 115px;
+        overflow: hidden;
+      }
+    }
   }
   
+}
+
+//fim section3
+
+#section4 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  h1 {
+    margin-bottom: 45px;
+  }
+
+  .row {
+    &:first-of-type{
+      border-top: 5px solid $amarelo;
+    }
+    &:nth-of-type(2){
+      .box-best {
+        &:nth-child(even){
+          background-color: white;
+        }
+        &:nth-child(odd){
+          background-color: #F9F9F9;
+        }
+      }
+    }
+  }
+
+  .regular {
+    .slick-slide{
+      &:nth-child(even){
+        .box-best {
+          background-color: white;
+        }
+      }
+      &:nth-child(odd){
+        .box-best {
+          background-color: #F9F9F9;
+        }
+      }
+    }
+  }
+
+  .box-best {
+    height: 245px;
+    padding-left: 40px;
+    padding-right: 30px;
+    overflow-wrap: anywhere;
+    font-size: 18px;
+
+    &:nth-child(even){
+      background-color: #F9F9F9;
+    }
+    &:nth-child(odd){
+      background-color: white;
+    }
+  }
 }

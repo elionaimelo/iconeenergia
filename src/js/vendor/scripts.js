@@ -40,9 +40,9 @@ jQuery(document).ready(function() {
 		$('.sidebar').addClass('light');
 	});
 	/* replace the default browser scrollbar in the sidebar, in case the sidebar menu has a height that is bigger than the viewport */
-	$('.sidebar').mCustomScrollbar({
-		theme: "minimal-dark"
-	});
+	// $('.sidebar').mCustomScrollbar({
+	// 	theme: "minimal-dark"
+	// });
 	
 	/*
 	    Navigation
@@ -84,9 +84,9 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-	$('.top-content').backstretch("assets/img/backgrounds/1.jpg");
-    $('.section-4-container').backstretch("assets/img/backgrounds/2.jpg");
-    $('.section-6-container').backstretch("assets/img/backgrounds/1.jpg");
+	// $('.top-content').backstretch("assets/img/backgrounds/1.jpg");
+  //   $('.section-4-container').backstretch("assets/img/backgrounds/2.jpg");
+  //   $('.section-6-container').backstretch("assets/img/backgrounds/1.jpg");
     
     /*
 	    Wow
