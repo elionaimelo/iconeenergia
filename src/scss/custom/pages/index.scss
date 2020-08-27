@@ -34,26 +34,24 @@
       background-size: 200% 200%;
       transition: background-position 0.3s;
     }
-  
+
     .to-top {
       background-image: linear-gradient(to top, $amarelo 50%, white 0);
       background-position: top;
     }
-  
+
     .to-top:hover {
       background-position: bottom;
-      
-  
+
       svg {
         .inverter {
-          rect, path {
+          rect,
+          path {
             fill: red !important;
           }
         }
       }
     }
-
-
   }
   // fim section2
 
@@ -82,68 +80,93 @@
         }
       }
       .carousel-item {
-        color:white;
+        color: white;
         height: 115px;
         overflow: hidden;
       }
     }
   }
-  
-}
 
-//fim section3
+  //fim section3
 
-#section4 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  #section4 {
+    padding-top: 120px;
+    padding-bottom: 120px;
 
-  h1 {
-    margin-bottom: 45px;
-  }
-
-  .row {
-    &:first-of-type{
-      border-top: 5px solid $amarelo;
+    h1 {
+      margin-bottom: 45px;
     }
-    &:nth-of-type(2){
-      .box-best {
-        &:nth-child(even){
-          background-color: white;
-        }
-        &:nth-child(odd){
-          background-color: #F9F9F9;
-        }
+
+    .row {
+      &:first-of-type {
+        border-top: 5px solid $amarelo;
       }
-    }
-  }
-
-  .regular {
-    .slick-slide{
-      &:nth-child(even){
+      &:nth-of-type(2) {
         .box-best {
-          background-color: white;
-        }
-      }
-      &:nth-child(odd){
-        .box-best {
-          background-color: #F9F9F9;
+          &:nth-child(even) {
+            background-color: white;
+          }
+          &:nth-child(odd) {
+            background-color: #f9f9f9;
+          }
         }
       }
     }
+
+    .regular {
+      .slick-slide {
+        &:nth-child(even) {
+          .box-best {
+            background-color: white;
+          }
+        }
+        &:nth-child(odd) {
+          .box-best {
+            background-color: #f9f9f9;
+          }
+        }
+      }
+    }
+
+    .box-best {
+      height: 245px;
+      padding-left: 40px;
+      padding-right: 30px;
+      overflow-wrap: anywhere;
+      font-size: 18px;
+
+      &:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      &:nth-child(odd) {
+        background-color: white;
+      }
+    }
+
   }
+  //fim section4
 
-  .box-best {
-    height: 245px;
-    padding-left: 40px;
-    padding-right: 30px;
-    overflow-wrap: anywhere;
-    font-size: 18px;
+  #section5 {
+    background: url(../images/bgSection5.jpg) center no-repeat;
+    background-size: cover;
+    height: 550px;
+    color: white;
 
-    &:nth-child(even){
-      background-color: #F9F9F9;
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 30px;
     }
-    &:nth-child(odd){
+
+    .form {
       background-color: white;
+      border-top: 5px solid $amarelo;
+      height: 107% !important;
+      margin-top: -6px;
     }
   }
+  // fim section5
 }
+
+// fim home
