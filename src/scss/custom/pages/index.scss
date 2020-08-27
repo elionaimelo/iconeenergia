@@ -26,13 +26,30 @@
   #section2 {
     padding-top: 90px;
     padding-bottom: 100px;
+    padding-bottom: 100px;
+    min-height: 440px;
+    h1 {
+      margin-bottom: 40px;
+    }
     .box {
-      width: 100%;
       height: 344px;
       border-bottom: 5px solid $amarelo;
       display: inline-block;
       background-size: 200% 200%;
       transition: background-position 0.3s;
+
+      p {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      .box-aux {
+        max-width: 80%;
+        svg {
+          display: block;
+          margin: 0 auto 20px;
+        }
+      }
     }
 
     .to-top {
@@ -42,12 +59,18 @@
 
     .to-top:hover {
       background-position: bottom;
+      cursor: pointer;
+
+      .btn2 {
+        display: block;
+      }
 
       svg {
+        display: block;
         .inverter {
           rect,
           path {
-            fill: red !important;
+            fill: black !important;
           }
         }
       }
@@ -167,6 +190,17 @@
     }
   }
   // fim section5
+
+  #section6 {
+    background-color: white;
+    margin-top: 124px;
+    height: 268px;
+
+    h2 {
+      font: $font2;
+      font-size: 28px;
+    }
+  }
 }
 
 // fim home

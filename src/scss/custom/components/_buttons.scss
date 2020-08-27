@@ -5,3 +5,14 @@
   color: $preto;
   font-weight: 600;
 }
+
+.btn2 {
+  background-color: black;
+  border-color: black;
+  bottom: -27px;
+  padding: 11px 30px;
+  display: none;
+  &:hover {
+    background-color: black;
+  }
+}

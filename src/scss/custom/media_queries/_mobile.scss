@@ -24,6 +24,25 @@
       }
     }
 
+    #section2 {
+      .box {
+        height: 107px;
+        border-left: 5px solid #ffce00;
+        border-bottom: none;
+        margin-bottom: 15px;
+        .box-aux {
+
+          svg {
+            height: 55px;
+            margin: auto 20px auto;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
     #section3 {
       background-image: url(../images/bgSection3mobile.jpg);
 
