@@ -1,19 +1,39 @@
 <section id="section5">
   <div class="container h-100">
-    <div class="row h-100">
+    <div class="row flex-column-reverse flex-lg-row h-100 remove-h">
       <div class="col-lg-6">
         <div class="form w-100">
+          <form action="action_page.php">
 
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" class="btn btn-primary btn3 d-block d-lg-inline-block" value="Enviar">
+        
+          </form>
         </div>
       </div>
-      <div class="col-lg-6 d-flex align-items-center justify-content-center">
-        <div>
-          <h1>
+      <div class="col-lg-6 d-flex align-items-start align-items-md-center justify-content-start justify-content-md-center">
+        <div class="col-aux">
+          <h1 class="text-center text-md-left">
             Saiba quanto<br/>
   sua empresa<br/>
   pode economizar!
           </h1>
-          <p>
+          <p class="text-center text-md-left">
             Envie sua última fatura e descubra. 
           </p>
         </div>

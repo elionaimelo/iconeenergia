@@ -2,6 +2,7 @@
   background-color: $amarelo;
   border-color: $amarelo;
   padding: 15px 30px;
+  border-radius: 0;
   color: $preto;
   font-weight: 600;
 }
@@ -14,5 +15,20 @@
   display: none;
   &:hover {
     background-color: black;
+  }
+}
+
+.btn3 {
+  @extend .btn1;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn3 {
+    width: 100%;
   }
 }

@@ -79,5 +79,31 @@
       }
     }
 
+    #section5 {
+      background-image: none;
+      background-color: black;
+
+      .col-aux {
+        width: 100%;
+      }
+
+      h1 {
+        margin-top: 35px;
+        font-size: 24px;
+      }
+
+      p {
+        margin-bottom: 40px;
+      }
+
+      .form {
+        height: 375px !important;
+      }
+      
+      .remove-h {
+        height: auto !important;
+      }
+    }
+
   }
 }
