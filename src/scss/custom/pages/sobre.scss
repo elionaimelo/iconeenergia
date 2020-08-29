@@ -13,6 +13,7 @@
 
   #section2 {
     padding-top: 99px;
+    padding-bottom: 115px;
     .label-pic {
       background-color: white;
       border-top: 5px solid $amarelo;
@@ -31,10 +32,54 @@
       margin-left: 8.33333%;
     }
   }
-}
 
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
+  #section3 {
+    background-color: white;
+    padding-bottom: 100px;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: $amarelo;
+      width: 100%;
+      width: 91.7%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .carousel-indicators {
+      bottom: -60px;
+      li {
+        background-color: rgba($color: #000000, $alpha: .4);
+      }
+      .active {
+        background-color: $amarelo;
+      }
+    }
+
+    .infor {
+      margin-top: -5px;
+      border-top: 5px solid $amarelo;
+      height: 324px;
+      background-color: #F9F9F9;
+
+      div {
+        max-width: 270px;
+        display: block;
+        margin: auto;
+      }
+
+      h3 {
+        margin-top: 40px;
+      }
+
+      p {
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+        padding-top: 33px;
+        margin-top: 35px;
+      }
+    }
   }
 }
+
