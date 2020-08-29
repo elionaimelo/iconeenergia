@@ -28,6 +28,14 @@ $(document).on('ready', function() {
       // instead of a settings object
     ]
   });
+  $(".regular1").slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '25px',
+  });
 });
 
 console.log('bla appjs');
