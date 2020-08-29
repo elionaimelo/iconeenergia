@@ -37,17 +37,6 @@
     background-color: white;
     padding-bottom: 100px;
 
-    &:before {
-      content: '';
-      display: block;
-      height: 5px;
-      background-color: $amarelo;
-      width: 100%;
-      width: 92.2%;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
     .carousel-indicators {
       bottom: -60px;
       li {

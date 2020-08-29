@@ -10,6 +10,19 @@
       font-size: 28px;
     }
   }
+
+  #section3 {
+    &:before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: $amarelo;
+      width: 100%;
+      width: 92.2%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
 //fim sobre
 }
