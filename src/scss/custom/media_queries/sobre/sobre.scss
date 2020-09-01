@@ -37,6 +37,38 @@
       width: 92%;
     }
   }
+
+  #resultados-reais {
+    .col-md-8 {
+      &::before {
+        content: none;
+      }
+    }
+    .infor {
+      background-color: #F9F9F9;
+      padding-top: 30px;
+      padding-bottom: 1px;
+      min-height: 151px;
+      height: auto;
+
+      div {
+        margin-bottom: 35px;
+      }
+    }
+
+    .border-carousel-item {
+      border: none;
+    }
+
+    .carousel-control-next, .carousel-control-prev { 
+      margin-top: 38.3%;
+    }
+
+    .carousel-control-prev {
+      right: auto;
+      left: 12px;
+    }
+  }
 }
 //fim sobre
 }
