@@ -76,7 +76,7 @@ h1 {
 }
 //fim das seções que vão em várias páginas home e sobre
 
-.home , 
+.home,
 .o-que-fazemos {
   #section2 {
     padding-top: 90px;
@@ -92,12 +92,12 @@ h1 {
       display: inline-block;
       background-size: 200% 200%;
       transition: background-position 0.3s;
-  
+
       p {
         font-size: 20px;
         margin-bottom: 0;
       }
-  
+
       .box-aux {
         max-width: 80%;
         svg {
@@ -106,20 +106,20 @@ h1 {
         }
       }
     }
-  
+
     .to-top {
       background-image: linear-gradient(to top, $amarelo 50%, white 0);
       background-position: top;
     }
-  
+
     .to-top:hover {
       background-position: bottom;
       cursor: pointer;
-  
+
       .btn2 {
         display: block;
       }
-  
+
       svg {
         display: block;
         .inverter {
@@ -137,80 +137,79 @@ h1 {
     background-color: white;
     padding-top: 104px;
     padding-bottom: 100px;
-  
+
     h1 {
       font-size: 36px;
       margin-bottom: 41px;
       font-weight: bold;
     }
-  
+
     .border-carousel-item {
-      border: 1px solid rgba($color: #000000, $alpha: .1);
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
       border-left: 0;
     }
-  
+
     h5 {
       font-weight: bold;
       margin-top: 40px;
       margin-bottom: 20px;
     }
-  
+
     p {
       margin-bottom: 41px;
       padding-right: 50px;
     }
-  
+
     .col-lg-8 {
       &::before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         bottom: 0;
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
         width: 100%;
         height: 120px;
         z-index: 1;
       }
     }
-  
-    .carousel-control-next, .carousel-control-prev {
+
+    .carousel-control-next,
+    .carousel-control-prev {
       height: 0;
       width: auto;
       margin-top: -61px;
     }
-  
+
     .remove-padding-carousel {
       padding: 0;
     }
-  
+
     .carousel-item img {
       width: 100%;
     }
-  
+
     .invert-arrow {
       transform: scaleX(-1);
     }
-  
+
     .carousel-control-prev {
       left: auto;
       right: 55px;
     }
-  
+
     .carousel-control-next {
       right: 0px;
     }
-  
+
     .wrapper-infor {
       margin-left: 50px;
-      
     }
-  
+
     .infor {
       position: relative;
       z-index: 2;
       height: 122px;
       div {
-       
         h6 {
           font-weight: bold;
           font-size: 36px;
@@ -225,22 +224,53 @@ h1 {
         }
       }
     }
-  
+
     .carousel-indicators {
       justify-content: flex-end;
       margin-right: 3%;
       li {
-        background-color: rgba($color: #000000, $alpha: .6);
+        background-color: rgba($color: #000000, $alpha: 0.6);
       }
-  
+
       .active {
         background-color: $amarelo;
       }
     }
-  
-  
   }
-    
+
+  #section3 {
+    background: url(../images/bgSection3.jpg) center no-repeat;
+    background-size: cover;
+    height: 540px;
+    h1 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    #carousel1 {
+      .carousel-indicators {
+        justify-content: flex-start;
+        margin-left: 0;
+
+        li {
+          height: 8px;
+          margin-right: 14px;
+        }
+
+        .active {
+          background-color: $amarelo;
+        }
+      }
+      .carousel-item {
+        color: white;
+        height: 115px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  //fim section3
 }
 
 //fim das seções que vão em várias páginas home e o que fazemos

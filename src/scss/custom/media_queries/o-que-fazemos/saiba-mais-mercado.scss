@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+
+  .o-que-fazemos {
+    #saiba-mais-mercado  {
+
+      article {
+        margin: 45px 0 0 16px;
+      }
+    }
+
+    .border-top-custom {
+      border-top: 1px solid rgba($color: #000000, $alpha: .15);
+      width: 98%;
+      margin: 30px auto 0;
+    }
+
+    .col-md-4 {
+      &:last-child {
+        .border-top-custom {
+          border-bottom: 1px solid rgba($color: #000000, $alpha: .15);
+          padding-bottom: 25px;
+        }
+      }
+    }
+
+  }
+  
+}
