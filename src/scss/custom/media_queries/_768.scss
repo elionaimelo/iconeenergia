@@ -1,5 +1,4 @@
 @media screen and (max-width: 768px) {
-
   .bg-black {
     background-color: black;
     height: 75px;
@@ -7,7 +6,8 @@
     z-index: 100;
   }
 
-  .home, .sobre {
+  .home,
+  .sobre {
     #newsletter {
       min-height: 275px;
       height: auto;
@@ -32,22 +32,59 @@
       .form {
         height: 375px !important;
       }
-      
+
       .remove-h {
         height: auto !important;
       }
     }
   }
-  
-  .sobre{
+
+  .sobre {
     #section2 {
       min-height: 810px;
     }
-    
-  #section5 {
-    .box {
-      width: 92%;
+
+    #section5 {
+      .box {
+        width: 92%;
+      }
     }
-  }
+    #resultados-reais {
+      padding-bottom: 0;
+
+      h1 {
+        padding-right: 130px;
+      }
+  
+
+      .col-lg-8 {
+        &::before {
+          content: none;
+        }
+      }
+
+      .border-carousel-item {
+        border: none;
+      }
+
+      .infor {
+        background-color: #F9F9F9;
+        padding-top: 30px;
+        padding-bottom: 1px;
+        min-height: 151px;
+        height: auto;
+  
+        div {
+          margin-bottom: 35px;
+        }
+      }
+      .wrapper-infor {
+        margin-left: 0;
+
+        p {
+          padding-right: 0;
+        }
+      }
+    }
   }
 }

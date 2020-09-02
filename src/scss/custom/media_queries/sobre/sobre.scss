@@ -42,13 +42,18 @@
     }
   }
 
-  #resultados-reais {
-    padding-bottom: 0;
-    .col-md-8 {
-      &::before {
-        content: none;
-      }
+  #section5 {
+    .box {
+      width: 92%;
     }
+  }
+
+  #resultados-reais {
+
+    h1 {
+      padding-right: 0px;
+    }
+
     .infor {
       background-color: #F9F9F9;
       padding-top: 30px;
@@ -58,6 +63,13 @@
 
       div {
         margin-bottom: 35px;
+      }
+    }
+
+    .wrapper-infor {
+      p {
+        max-width: 87%;
+        padding-right: 0;
       }
     }
 
