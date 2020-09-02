@@ -1,5 +1,47 @@
 @media screen and (max-width: 600px) {
 
+  .sobre,
+  .o-que-fazemos {
+    #resultados-reais {
+
+      h1 {
+        padding-right: 0px;
+      }
+  
+      .infor {
+        background-color: #F9F9F9;
+        padding-top: 30px;
+        padding-bottom: 1px;
+        min-height: 151px;
+        height: auto;
+  
+        div {
+          margin-bottom: 35px;
+        }
+      }
+  
+      .wrapper-infor {
+        p {
+          max-width: 87%;
+          padding-right: 0;
+        }
+      }
+  
+      .border-carousel-item {
+        border: none;
+      }
+  
+      .carousel-control-next, .carousel-control-prev { 
+        margin-top: 38.3%;
+      }
+  
+      .carousel-control-prev {
+        right: auto;
+        left: 12px;
+      }
+    }
+  }
+
 .sobre {
   #section1 {
     background: url(../images/bgSection1Sobre-mobile.jpg) no-repeat;
@@ -35,44 +77,7 @@
     }
   }
 
-  #resultados-reais {
 
-    h1 {
-      padding-right: 0px;
-    }
-
-    .infor {
-      background-color: #F9F9F9;
-      padding-top: 30px;
-      padding-bottom: 1px;
-      min-height: 151px;
-      height: auto;
-
-      div {
-        margin-bottom: 35px;
-      }
-    }
-
-    .wrapper-infor {
-      p {
-        max-width: 87%;
-        padding-right: 0;
-      }
-    }
-
-    .border-carousel-item {
-      border: none;
-    }
-
-    .carousel-control-next, .carousel-control-prev { 
-      margin-top: 38.3%;
-    }
-
-    .carousel-control-prev {
-      right: auto;
-      left: 12px;
-    }
-  }
 }
 //fim sobre
 }
