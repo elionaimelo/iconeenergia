@@ -1,15 +1,15 @@
-
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   outline: none !important;
   box-shadow: none;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
   font-family: $font1;
   font-size: 16px;
@@ -32,7 +32,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #9B9B9B;
+  color: #9b9b9b;
   border: 0;
   text-decoration: none;
 }
@@ -40,3 +40,38 @@ a:focus {
 h1 {
   font-size: 28px;
 }
+
+.home,
+.sobre {
+  #saiba-quanto {
+    background: url(../images/bgSection5.jpg) center no-repeat;
+    background-size: cover;
+    height: 550px;
+    color: white;
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .form {
+      background-color: white;
+      border-top: 5px solid $amarelo;
+      height: 107% !important;
+      margin-top: -6px;
+    }
+  }
+  #newsletter {
+    background-color: white;
+    margin-top: 124px;
+    height: 268px;
+
+    h2 {
+      font: $font2;
+      font-size: 28px;
+    }
+  }
+}
+//fim das seções que vão em várias páginas

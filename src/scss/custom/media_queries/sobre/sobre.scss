@@ -11,6 +11,16 @@
     }
   }
 
+  #section2 {
+    padding-top: 35px;
+    .wrapper-row , .layer2 {
+      position: relative !important;
+      img {
+        margin-top: 60px;
+      }
+    }
+  }
+
   #section3 {
     &:before {
       content: '';
@@ -39,6 +49,7 @@
   }
 
   #resultados-reais {
+    padding-bottom: 0;
     .col-md-8 {
       &::before {
         content: none;

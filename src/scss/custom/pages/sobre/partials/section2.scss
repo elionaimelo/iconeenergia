@@ -1,6 +1,14 @@
 #section2 {
   padding-top: 99px;
   padding-bottom: 115px;
+  min-height: 800px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
   .label-pic {
     background-color: white;
     border-top: 5px solid $amarelo;
@@ -8,7 +16,17 @@
 
     p {
       max-width: 350px;
+      margin-left: 50px;
+      padding-right: 25px;
     }
+  }
+
+  .layer1 {
+    z-index: 1;
+  }
+
+  .layer2 {
+    z-index: 2;
   }
 
   .col-inner {
