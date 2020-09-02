@@ -1,4 +1,4 @@
-$(document).on('ready', function() {
+$(document).on("ready", function () {
   $(".regular").slick({
     dots: false,
     infinite: true,
@@ -11,8 +11,8 @@ $(document).on('ready', function() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
@@ -20,27 +20,30 @@ $(document).on('ready', function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '25px',
-        }
+          centerPadding: "25px",
+        },
       },
-    ]
+    ],
   });
   $(".regular1").slick({
     dots: false,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+    centerMode: true,
+    centerPadding: "25px",
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '25px',
-          responsive:
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              }
-            },
+          centerPadding: "25px",
+        },
+      },
+    ],
   });
 });
 
-console.log('bla appjs');
+console.log("bla appjs");
