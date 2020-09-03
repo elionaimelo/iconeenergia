@@ -41,6 +41,13 @@ h1 {
   font-size: 28px;
 }
 
+.form {
+  background-color: white;
+  border-top: 5px solid $amarelo;
+  height: 107% !important;
+  margin-top: -6px;
+}
+
 .home,
 .sobre,
 .o-que-fazemos, 
@@ -56,13 +63,6 @@ h1 {
       font-weight: bold;
       color: white;
       margin-bottom: 30px;
-    }
-
-    .form {
-      background-color: white;
-      border-top: 5px solid $amarelo;
-      height: 107% !important;
-      margin-top: -6px;
     }
   }
   #newsletter {
