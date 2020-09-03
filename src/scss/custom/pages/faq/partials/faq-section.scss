@@ -1,0 +1,49 @@
+#faq-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  #accordion {
+    .card {
+      border: none;
+      transition: all 0.5s ease;
+      border-radius: 0;
+    }
+
+    .card>.card-header{
+      border: none;
+      border-top: 1px solid #E6E8EA;
+      margin-bottom: 0 !important;
+      background-color: #F9F9F9;
+      padding: 50px 46px;
+      // transition: background-color 0.5s ease;
+      cursor: pointer;
+
+      &:not(.collapsed) {
+        background-color: white;
+        border-top-color: $amarelo;
+        border-top-width: 5px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+      }
+    }
+
+    .card-body {
+      p {
+        padding: 40px 50px;
+      }
+    }
+
+    
+
+    
+  }
+
+  .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+  }
+  .accordion .card-header.collapsed:after {
+      /* symbol for "collapsed" panels */
+      content: "\f067"; 
+  }
+}

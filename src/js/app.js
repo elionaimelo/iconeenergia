@@ -46,4 +46,5 @@ $(document).on("ready", function () {
   });
 });
 
-console.log("bla appjs");
+
+

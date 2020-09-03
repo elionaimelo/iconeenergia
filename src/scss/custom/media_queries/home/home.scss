@@ -1,6 +1,12 @@
 @media screen and (max-width: 600px) {
 
-  
+  .home,.sobre, .o-que-fazemos {
+   #newsletter {
+     height: auto;
+     min-height: 268px;
+   }
+  }
+
   .home, .o-que-fazemos {
     #section2 {
       .box {
