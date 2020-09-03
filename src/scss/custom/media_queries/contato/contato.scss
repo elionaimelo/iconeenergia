@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+  .contato {
+    #informacoes-contato {
+      .informacoes-empresa {
+        padding-top: 50px;
+        h1 {
+          max-width: 85%;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+
+    #onde-estamos {
+      background-image: url(../images/bgOndeEstamos-mobile.png);
+      min-height: 490px;
+      height: auto;
+      padding-bottom: 100px;
+      
+      address {
+        max-width: 215px;
+        display: block;
+        margin: auto 20px 30px;
+      }
+
+      h1 {
+        margin-top: 200px;
+      }
+    }
+  }
+}

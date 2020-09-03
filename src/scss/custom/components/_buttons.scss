@@ -27,6 +27,22 @@
   }
 }
 
+.btn4 {
+  @extend .btn1;
+  background-color: black;
+  border-color: black;
+  color: white;
+  text-transform: uppercase;
+
+  span {
+    padding-left: 15px;
+  }
+
+  &:hover {
+    background-color: $amarelo;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .btn3 {
     width: 100%;

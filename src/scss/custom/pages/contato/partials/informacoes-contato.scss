@@ -1,6 +1,34 @@
 #informacoes-contato {
   padding-bottom: 100px;
 
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  a {
+    color: black;
+  }
+
+  .telefone {
+    margin-top: 22px;
+    p {
+      margin-bottom: 15px;
+      &:not(:first-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .email {
+    margin-top: 20px;
+  }
+
+  .redes-sociais {
+    margin-top: 65px;
+  }
+
+
   .informacoes-empresa {
     padding-top: 100px;
   }
