@@ -6,8 +6,37 @@
     z-index: 100;
   }
 
-  .home,
-  .sobre {
+  #description-service {
+    border-top: 5px solid #ffce00;
+    .form {
+      border:none;
+      margin-top: 0;
+    }
+  }
+
+  #consultoria-assessoria{
+    min-height: 690px;
+    height: auto;
+
+    .img-mask {
+      overflow: inherit;
+      position: relative;
+      img {
+        max-width: 100%;
+        position: inherit;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .h-normal {
+    height: inherit !important;
+  }
+  
+
+
+  .page-template-modeloHome,
+  .page-template-modeloSobre {
     #newsletter {
       min-height: 275px;
       height: auto;
@@ -39,7 +68,7 @@
     }
   }
 
-  .sobre {
+  .page-template-modeloSobre {
     #section2 {
       min-height: 810px;
     }
@@ -65,8 +94,8 @@
   }
   //fim sobre
 
-  .sobre,
-  .o-que-fazemos {
+  .page-template-modeloSobre,
+  .page-template-modeloOqueFazemos {
     #resultados-reais {
       padding-bottom: 0;
 
@@ -106,7 +135,7 @@
     }
   }
 
-  .o-que-fazemos {
+  .page-template-modeloOqueFazemos {
     #conheca-servicos {
       h1 {
         margin-bottom: 0;

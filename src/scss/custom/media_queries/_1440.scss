@@ -1,7 +1,41 @@
-@media screen and (max-width: 1440px){
-  .sobre{
+@media screen and (max-width: 1440px) {
+  .page-template-modeloSobre {
     #section2 {
       min-height: 660px;
     }
+  }
+
+  #description-service {
+    .form {
+      margin-top: -10px;
+    }
+  }  
+
+  #consultoria-assessoria {
+    .img-mask {
+      overflow: hidden;
+      position: relative;
+      img {
+        max-width: none;
+        margin-left: -200px;
+      }
+    }
+
+    .wrapper-text-consultoria {
+      padding-top: 32px;
+      padding-left: 0px;
+      width: 83%;
+    }
+  }
+
+  .blog #saiba-quanto,
+  .page-template-modeloComercializacaoEnergia #saiba-quanto,
+  .page-template-modeloConsultoriaAssessoria #saiba-quanto,
+  .page-template-modeloFaq #saiba-quanto,
+  .page-template-modeloHome #saiba-quanto,
+  .page-template-modeloOqueFazemos #saiba-quanto,
+  .page-template-modeloProjetosEletricos #saiba-quanto,
+  .page-template-modeloSobre #saiba-quanto {
+    margin-bottom: 80px;
   }
 }

@@ -41,17 +41,97 @@ h1 {
   font-size: 28px;
 }
 
+.newsletter {
+  input[type="text"],
+  input[type="email"] {
+    background-color: white !important;
+    border: none !important;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2) !important;
+    border-radius: 0;
+    padding-left: 0;
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+  }
+}
+
 .form {
   background-color: white;
   border-top: 5px solid $amarelo;
   height: 107% !important;
   margin-top: -6px;
+  padding: 80px 80px 0px 80px;
+
+  input,
+  textarea {
+    background-color: white !important;
+    border: none !important;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2) !important;
+    margin-bottom: 30px;
+    border-radius: 0;
+    padding-left: 0;
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: rgba($color: #000000, $alpha: 0.4) !important;
+      opacity: 1;
+    }
+  }
+
+  .wpcf7-submit {
+    display: block !important;
+    background-color: #ffce00 !important;
+    width: 100% !important;
+    border: none !important;
+    color: black !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 20px;
+    border-radius: 0;
+    margin-top: 11px;
+  }
 }
 
-.home,
-.sobre,
-.o-que-fazemos, 
-.faq {
+.page-template-modeloHome,
+.page-template-modeloSobre,
+.page-template-modeloOqueFazemos,
+.page-template-modeloFaq,
+.page-template-modeloConsultoriaAssessoria,
+.page-template-modeloComercializacaoEnergia,
+.page-template-modeloProjetosEletricos,
+.blog {
   #saiba-quanto {
     background: url(../images/bgSection5.jpg) center no-repeat;
     background-size: cover;
@@ -65,22 +145,73 @@ h1 {
       margin-bottom: 30px;
     }
   }
-  #newsletter {
-    background-color: white;
-    margin-top: 124px;
-    height: 268px;
-
-    h2 {
-      font: $font2;
-      font-size: 28px;
-    }
-  }
 }
 //fim das seções que vão em várias páginas home e sobre
 
-.home,
-.o-que-fazemos {
-  #section2 {
+#newsletter {
+  background-color: white;
+  margin-top: 124px;
+  height: 268px;
+
+  h2 {
+    font: $font2;
+    font-size: 28px;
+  }
+}
+
+#saiba-mais-mercado {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .go-blog {
+    color: rgba($color: #000000, $alpha: 0.6);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    img {
+      margin-left: 8px;
+    }
+  }
+
+  .go-blog2 {
+    @extend .go-blog;
+    color: black;
+    margin-top: 30px;
+  }
+
+  .figure {
+    margin-top: 40px;
+  }
+
+  article {
+    margin: 20px 15px;
+    h5 {
+      font-weight: 400;
+      height: 78px;
+      overflow: hidden;
+      margin-bottom: 23px;
+    }
+  }
+
+  .category {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+.page-template-modeloHome,
+.page-template-modeloOqueFazemos,
+.page-template-modeloConsultoriaAssessoria,
+.page-template-modeloComercializacaoEnergia,
+.page-template-modeloProjetosEletricos {
+  #section2,
+  #conheca-outros-servicos {
     padding-top: 90px;
     padding-bottom: 100px;
     padding-bottom: 100px;
@@ -276,3 +407,516 @@ h1 {
 }
 
 //fim das seções que vão em várias páginas home e o que fazemos
+
+.page-template-modeloSobre {
+  #resultados-reais {
+    background-color: white;
+    padding-top: 104px;
+    padding-bottom: 100px;
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 41px;
+      font-weight: bold;
+    }
+
+    .border-carousel-item {
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      border-left: 0;
+    }
+
+    h5 {
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 41px;
+      padding-right: 50px;
+    }
+
+    .col-lg-8 {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 120px;
+        z-index: 1;
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: 0;
+      width: auto;
+      margin-top: -61px;
+    }
+
+    .remove-padding-carousel {
+      padding: 0;
+    }
+
+    .carousel-item img {
+      width: 100%;
+    }
+
+    .invert-arrow {
+      transform: scaleX(-1);
+    }
+
+    .carousel-control-prev {
+      left: auto;
+      right: 55px;
+    }
+
+    .carousel-control-next {
+      right: 0px;
+    }
+
+    .wrapper-infor {
+      margin-left: 50px;
+    }
+
+    .infor {
+      position: relative;
+      z-index: 2;
+      height: 122px;
+      div {
+        h6 {
+          font-weight: bold;
+          font-size: 36px;
+          margin-right: 13px;
+          margin-bottom: 0;
+        }
+        p {
+          max-width: 240px;
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .carousel-indicators {
+      justify-content: flex-end;
+      margin-right: 3%;
+      li {
+        background-color: rgba($color: #000000, $alpha: 0.6);
+      }
+
+      .active {
+        background-color: $amarelo;
+      }
+    }
+  }
+}
+
+#topo-blog {
+  background: url(../images/bgNoticias.png) no-repeat;
+  height: 450px;
+  background-size: cover;
+
+  h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+}
+
+#content-blog {
+  .form {
+    padding: 40px;
+    height: auto !important;
+    min-height: 400px;
+  }
+
+  .categorias {
+    margin-top: 45px;
+    a {
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .area-posts {
+    padding-top: 100px;
+
+    .post {
+      border-bottom: 1px solid #e6e8ea;
+      padding-bottom: 24px;
+      &:not(:first-child) {
+        margin-top: 50px;
+      }
+      footer {
+        padding: 12px 0;
+
+        p {
+          font-size: 14px;
+          a {
+            color: black;
+            font-weight: 600;
+          }
+        }
+        span {
+          margin-left: 36px;
+          color: rgba($color: #000000, $alpha: 0.4);
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            display: inline-block;
+            height: 18px;
+            width: 1px;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            margin-left: -18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.categorias {
+  ul {
+    list-style: none;
+    padding-left: 0px;
+
+    li {
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+.border-bottom-single-post {
+  border-bottom: 5px solid $amarelo;
+}
+
+.entry-title {
+  a {
+    color: #000;
+  }
+}
+
+.area-posts {
+  p {
+    a {
+      color: black;
+    }
+  }
+}
+
+.layer1 {
+  z-index: 1;
+}
+
+.layer2 {
+  z-index: 2;
+}
+
+#description-service {
+  .form {
+    margin-top: -4px;
+    padding-bottom: 10px;
+    z-index: 10;
+  }
+
+  .tip {
+    margin-bottom: 40px;
+    min-height: 160px;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  ul {
+    margin-left: 0px;
+    position: relative;
+    list-style: none;
+    padding-left: 1.2em;
+    li {
+      margin-bottom: 30px;
+      margin-left: 8px;
+      &:before {
+        content: url(../images/bullet-oquefazemos.png);
+        color: $amarelo;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  .container-wrap {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+#conheca-outros-servicos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+}
+
+#consultoria-assessoria {
+  height: 690px;
+  min-height: auto;
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .wrapper-text-consultoria {
+    padding-left: 100px;
+  }
+}
+
+#conteudo-post {
+  hr {
+    padding: 50px 0;
+  }
+
+  h1 {
+    margin-top: 55px;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  img {
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  .wp-caption {
+    width: auto !important;
+  }
+
+  blockquote {
+    border-left: 5px solid $amarelo;
+    margin-left: 55px;
+    margin-bottom: 40px;
+    margin-top: 33px;
+    padding: 0 30px;
+    &:before {
+      color: #ccc;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+  }
+
+  ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    position: relative;
+    list-style: none;
+    padding-left: 1.2em;
+    li {
+      margin-bottom: 30px;
+      margin-left: 8px;
+      &:before {
+        content: url(../images/retangulo-amarelo.png);
+        color: $amarelo;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+.aux-saiba-mais-mercado {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#topo-single-post {
+  height: 350px;
+  background-color: #000;
+
+  h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .categoria-post {
+    color: $amarelo;
+    a {
+      color: $amarelo;
+    }
+  }
+
+  .data-post {
+    color: white;
+    position: relative;
+    margin-left: 36px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
+      height: 18px;
+      width: 1px;
+      background-color: white;
+      margin-left: -18px;
+    }
+  }
+}
+
+.go-back {
+  border: none;
+  background-color: transparent;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  float: right;
+  color: rgba($color: #000000, $alpha: .4);
+}
+
+#conteudo-post {
+  ul.social-share {
+    li {
+      float: right;
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+}
+
+.page-template-modeloComercializacaoEnergia,
+.page-template-modeloConsultoriaAssessoria,
+.page-template-modeloProjetosEletricos {
+  #topo-single-post {
+    height: 270px;
+  }
+}
+
+//medias queries aux
+@media (max-width: 1300px) {
+  #description-service {
+    .container-wrap {
+      max-width: 1140px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  #description-service {
+    .container-wrap {
+      max-width: 960px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #description-service {
+    .container-wrap {
+      max-width: 720px;
+    }
+  }
+  #consultoria-assessoria .layer2,
+  #consultoria-assessoria .wrapper-row {
+    position: relative !important;
+  }
+
+  #consultoria-assessoria .wrapper-row {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+
+  #saiba-mais-mercado {
+    article {
+      margin: 36px 0 0 16px;
+    }
+  
+    .border-top-custom {
+      border-top: 1px solid rgba($color: #000000, $alpha: 0.15);
+      width: 98%;
+      margin: 20px auto 0;
+    }
+  
+    .col-md-4 {
+      &:last-child {
+        .border-top-custom {
+          border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
+          padding-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  #description-service {
+    .form {
+      padding: 35px 10px;
+    }
+    .container-wrap {
+      max-width: 540px;
+    }
+  }
+  #consultoria-assessoria .wrapper-text-consultoria {
+    padding-left: 0;
+  }
+  #consultoria-assessoria .wrapper-row {
+    position: relative !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-template-modeloConsultoriaAssessoria,
+  .page-template-modeloComercializacaoEnergia,
+  .page-template-modeloProjetosEletricos {
+    #conheca-outros-servicos {
+      .box {
+        height: 107px;
+        border-left: 5px solid #ffce00;
+        border-bottom: none;
+        margin-bottom: 15px;
+        .box-aux {
+          svg {
+            height: 55px;
+            margin: auto 20px auto;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

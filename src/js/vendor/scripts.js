@@ -52,12 +52,12 @@ jQuery(document).ready(function() {
 		scroll_to($(this), 0);
 	});
 	
-	$('.to-top a').on('click', function(e) {
-		e.preventDefault();
-		if($(window).scrollTop() != 0) {
-			$('html, body').stop().animate({scrollTop: 0}, 1000);
-		}
-	});
+	// $('.to-top a').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	if($(window).scrollTop() != 0) {
+	// 		$('html, body').stop().animate({scrollTop: 0}, 1000);
+	// 	}
+	// });
 	/* make the active menu item change color as the page scrolls up and down */
 	/* we add 2 waypoints for each direction "up/down" with different offsets, because the "up" direction doesn't work with only one waypoint */
 	$('.section-container').waypoint(function(direction) {

@@ -1,13 +1,13 @@
 @media screen and (max-width: 600px) {
 
-  .home,.sobre, .o-que-fazemos {
+  .page-template-modeloHome,.page-template-modeloSobre, .page-template-modeloOqueFazemos {
    #newsletter {
      height: auto;
      min-height: 268px;
    }
   }
 
-  .home, .o-que-fazemos {
+  .page-template-modeloHome, .page-template-modeloOqueFazemos {
     #section2 {
       .box {
         height: 107px;
@@ -48,7 +48,7 @@
   }
 
 
-  .home {
+  .page-template-modeloHome {
 
     #section1 {
       padding-top: 0px;
