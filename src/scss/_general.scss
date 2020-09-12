@@ -537,6 +537,9 @@ h1 {
 
   .categorias {
     margin-top: 45px;
+    .cat-item-9 {
+      display: none;
+    }
     a {
       font-weight: 600;
       margin-bottom: 20px;
@@ -850,6 +853,60 @@ h1 {
   #topo-single-post {
     height: 270px;
   }
+}
+
+.menu-menumembro-container {
+  a {
+    display:block;
+    background: url(../images/icon-enter-white.svg) no-repeat;
+    color:#FFF;
+    font-size:16px;
+    line-height:40px;
+    text-decoration:none;
+    background-position: left center;
+    padding-left: 25px;
+    &:hover { 
+      background-color: #000000; 
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    li {
+      &:hover > ul {
+        display:inherit;
+      }
+    }
+    ul {
+      display: none;
+      position: absolute; 
+      top: 40px; /* the height of the main nav */
+
+      li {
+        width:170px;
+        float:none;
+        display:list-item;
+        position: relative;
+        background-color: white;
+        font-size: 16px;
+        a {
+          color: black !important;
+          background-image: none;
+          padding: 10px;
+          font-size: 14px;
+          line-height: normal;
+          &:hover {
+            color: white !important;
+          }
+        }
+      }
+    }
+    li {
+      display:inline-block;
+      }
+    }
 }
 
 //medias queries aux
