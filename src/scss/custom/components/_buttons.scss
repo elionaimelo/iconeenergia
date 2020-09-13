@@ -5,6 +5,16 @@
   border-radius: 0;
   color: $preto;
   font-weight: 600;
+  border-color: $amarelo;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    background-color: black;
+  border-color: black;
+  color: white;
+  outline: 0;
+  }
 }
 
 .btn2 {
@@ -13,8 +23,10 @@
   bottom: -27px;
   padding: 11px 30px;
   display: none;
-  &:hover {
+  &:hover, &:focus {
     background-color: black;
+    border-color: black;
+    outline: 0;
   }
 }
 
@@ -22,8 +34,9 @@
   @extend .btn1;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover, &:focus  {
     background-color: black;
+    outline: 0;
   }
 }
 
@@ -38,9 +51,16 @@
     padding-left: 15px;
   }
 
-  &:hover {
+  &:hover , &:focus {
     background-color: $amarelo;
+    border-color: $amarelo;
     color: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn4 {
+    margin-top: 15px;
   }
 }
 

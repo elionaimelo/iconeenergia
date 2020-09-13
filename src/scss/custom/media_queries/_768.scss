@@ -33,10 +33,14 @@
     height: inherit !important;
   }
   
-
-
   .page-template-modeloHome,
-  .page-template-modeloSobre {
+.page-template-modeloSobre,
+.page-template-modeloOqueFazemos,
+.page-template-modeloFaq,
+.page-template-modeloConsultoriaAssessoria,
+.page-template-modeloComercializacaoEnergia,
+.page-template-modeloProjetosEletricos,
+.blog {
     #newsletter {
       min-height: 275px;
       height: auto;
@@ -44,6 +48,11 @@
     #saiba-quanto {
       background-image: none;
       background-color: black;
+      height: 750px;
+
+      .form {
+        padding-top: 38px;
+      }
 
       .col-aux {
         width: 100%;
@@ -56,10 +65,6 @@
 
       p {
         margin-bottom: 40px;
-      }
-
-      .form {
-        height: 375px !important;
       }
 
       .remove-h {
