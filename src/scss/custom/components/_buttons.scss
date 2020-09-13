@@ -7,13 +7,12 @@
   font-weight: 600;
   border-color: $amarelo;
   outline: 0;
+  box-shadow: none;
 
   &:hover,
   &:focus {
-    background-color: black;
-  border-color: black;
-  color: white;
-  outline: 0;
+    color: white;
+    outline: 0;
   }
 }
 
