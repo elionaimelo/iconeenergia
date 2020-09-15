@@ -11,7 +11,9 @@
 
   &:hover,
   &:focus {
-    color: white;
+    color: black;
+    background-color: #FFEB00;
+    border-color: #FFEB00;;
     outline: 0;
   }
 }
@@ -23,8 +25,9 @@
   padding: 11px 30px;
   display: none;
   &:hover, &:focus {
-    background-color: black;
-    border-color: black;
+    background-color: #FFEB00;
+    border-color: #FFEB00;;
+    color: black;
     outline: 0;
   }
 }

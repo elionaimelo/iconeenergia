@@ -39,6 +39,7 @@ a:focus {
 
 h1 {
   font-size: 28px;
+  font-weight: bold;
 }
 
 .newsletter {
@@ -75,7 +76,7 @@ h1 {
 .form {
   background-color: white;
   border-top: 5px solid $amarelo;
-  height: 107% !important;
+  height: 102% !important;
   margin-top: -6px;
   padding: 80px 80px 0px 80px;
 
@@ -176,7 +177,7 @@ h1 {
 
 #newsletter {
   background-color: white;
-  margin-top: 124px;
+  margin-top: 140px;
   height: 268px;
 
   .wpcf7 {
@@ -938,7 +939,7 @@ h1 {
   }
 }
 
-.menu-menumembro-container {
+.menu-dinamico {
   a {
     display:block;
     background: url(../images/icon-enter-white.svg) no-repeat;
