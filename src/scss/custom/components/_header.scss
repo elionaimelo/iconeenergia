@@ -8,6 +8,18 @@
       color: white;
       text-transform: uppercase;
       font-weight: 600;
+      font-size: 14px;
+
+      &:hover {
+        color: $amarelo;
+      }
+    }
+
+    .active {
+      a {
+        color: $amarelo;
+      }
+      
     }
     
     #navbarResponsive {
@@ -22,4 +34,10 @@
         }
       }
     }
+}
+
+.blog {
+  .container-fluid:after, .container-fluid:before, .container:after, .container:before {
+    content: none;
+  }
 }
