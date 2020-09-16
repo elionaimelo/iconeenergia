@@ -15,6 +15,7 @@
       margin-bottom: 0 !important;
       background-color: #F9F9F9;
       padding: 50px 46px;
+      position: relative;
       // transition: background-color 0.5s ease;
       cursor: pointer;
 
@@ -37,12 +38,14 @@
   
 
   .accordion .card-header:after {
-    font-family: 'FontAwesome';  
-    content: "\f068";
-    float: right; 
+    content: url(../images/icone-menos.png);
+    position: absolute;
+    right:40px;
   }
   .accordion .card-header.collapsed:after {
       /* symbol for "collapsed" panels */
-      content: "\f067"; 
+      content: url(../images/icone-mais.png);
+      position: absolute;
+      right:40px;
   }
 }
