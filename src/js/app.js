@@ -50,4 +50,4 @@ function goBack() {
   window.history.back();
 }
 
-
+$('#element').tooltip('enable')

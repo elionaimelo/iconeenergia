@@ -77,10 +77,14 @@ h1 {
   }
 }
 
+.h-550 {
+  height: 550px;
+}
+
 .form {
   background-color: white;
   border-top: 5px solid $amarelo;
-  height: 102% !important;
+  height: 110% !important;
   margin-top: -6px;
   padding: 80px 80px 0px 80px;
 
@@ -126,6 +130,7 @@ h1 {
     padding: 20px;
     border-radius: 0;
     margin-top: 11px;
+    margin-bottom: 0;
   }
 }
 
@@ -140,7 +145,7 @@ h1 {
   #saiba-quanto {
     background: url(../images/bgSection5.jpg) center no-repeat;
     background-size: cover;
-    height: 550px;
+    min-height: 550px;
     color: white;
 
     .custom-file-label {
@@ -155,7 +160,6 @@ h1 {
         width: 73%;
         bottom: 1px;
         position: absolute;
-        background-color: rgba(0,0,0,.2)!important;
       }
       &::after {
         content: "FATURA";
@@ -243,6 +247,24 @@ h1 {
     font-weight: 600;
     color: black;
   }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  color: black;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 0;
+}
+
+#element {
+  border: none;
+    background: transparent;
+  padding: 0;
+}
+
+.interrogacao {
+  margin-top: 10px;
 }
 
 .page-template-modeloHome,
