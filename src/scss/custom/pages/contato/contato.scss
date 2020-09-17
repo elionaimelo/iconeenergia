@@ -1,5 +1,17 @@
-.page-template-modeloContato {
+.page-template-modeloContato ,
+.page-template-modeloUsuario {
   @import 'partials/entre-contato';
   @import 'partials/informacoes-contato';
   @import 'partials/onde-estamos';
+}
+
+.page-template-modeloUsuario {
+ #entre-contato {
+  height: 230px;
+ }
+
+ #section1 {
+   margin-top: 80px;
+   margin-bottom: 80px;
+ }
 }
