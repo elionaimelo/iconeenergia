@@ -1,0 +1,33 @@
+@media screen and (max-width: 600px) {
+  .page-template-modeloFaq  {
+    #perguntas-frequentes-mercado {
+      height: 265px;
+      background-image: url(../images/bgPerguntasFrequentesMercadoMobile.jpg);
+      h1 {
+        font-size: 28px;
+        padding: 0 25px;
+        margin-bottom: 35px;
+      }
+    }
+
+    #faq-section {
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      #accordion {
+        .card>.card-header {
+          padding: 25px;
+          max-width: 92%;
+          
+          &.collapsed:after {
+            right: -12px;
+            top: 30px;
+          }
+        }
+      }
+    }
+   
+  }
+
+}
